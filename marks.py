@@ -11,7 +11,8 @@ def marks_prediction(hrs):
     model = LinearRegression()
     model.fit(X, y)
 
-    X_test = np.array(hrs).reshape((1,-1))
+    X_test = np.array(hrs)
+    X_test = X_test.reshape((1,-1))
 
     return model.predict(X_test)[0]
 
