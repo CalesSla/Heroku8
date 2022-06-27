@@ -13,14 +13,13 @@
     <p>
         How many years of experience
     </p>
-    <form action="/" method="POST">
+    <form method="POST" action="/">
         <input type="number" name="hrs" placeholder="Number of Hours Studied">
         <input type="submit">
     </form>
+    <p>Yout predicted salary is: </p>
+    {{ my_marks }}
 
-    {% if my_marks %}
-        <p>You predicted salary is: </p> {{my_marks}}
-    {% endif %}
 
 </body>
 </html>
