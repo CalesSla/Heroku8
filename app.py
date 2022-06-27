@@ -11,7 +11,9 @@ def marks():
         hrs = request.form['hrs']
         marks_pred = m.marks_prediction(hrs)
         mk = marks_pred
-    return render_template('index.html', my_marks = mk)
+        return render_template('index.html', my_marks=mk)
+    else:
+        return render_template('index.html', my_marks = 0)
 
 # @app.route('/sub', methods = ['POST'])
 # def submit():
